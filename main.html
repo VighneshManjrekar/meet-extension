@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: sans-serif;
+    }
+
+    main {
+        width: 200px;
+        min-height: 150px;
+        overflow: auto;
+        max-height: 800px;
+        border: solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    main button {
+        width: 100px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    main p {
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+    }
+
+    main #attendance-list {
+        border: solid 1px black;
+
+        display: none;
+        height: 200px;
+        max-height: 800px;
+        overflow: auto;
+        margin-bottom: 5px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .student {
+        margin: 5px 10px;
+    }
+</style>
+
+<body>
+    <main>
+        <h1>Meet Attendace</h1>
+        <button id="startScript">Attendance</button>
+        <button id="copyJson" style="display: none;">Copy Json</button>
+        <p>Made with love by Vighnesh</p>
+        <div id="attendance-list">
+        </div>
+    </main>
+</body>
+
+<script src="./extension.js"></script>
+
+</html>
